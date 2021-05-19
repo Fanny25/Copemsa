@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Imagenes/arriba.png</file>
+        <file>Imagenes/auto.png</file>
+        <file>Imagenes/camara.png</file>
+        <file>Imagenes/car.png</file>
+        <file>Imagenes/carretera1.png</file>
+        <file>Imagenes/contra.png</file>
+        <file>Imagenes/estacionamiento.png</file>
+        <file>Imagenes/factura.png</file>
+        <file>Imagenes/logo.png</file>
+        <file>Imagenes/Logo1.png</file>
+        <file>Imagenes/piso1.png</file>
+        <file>Imagenes/piso2.png</file>
+        <file>Imagenes/piso3.png</file>
+        <file>Imagenes/reservacion.png</file>
+        <file>Imagenes/salir.png</file>
+        <file>Imagenes/user.png</file>
+        <file>Imagenes/user1.png</file>
+        <file>Imagenes/Registrarse.png</file>
+        <file>Imagenes/Tarjeta.png</file>
+        <file>Imagenes/login.png</file>
+        <file>Imagenes/urgencia.png</file>
+        <file>Imagenes/reserva.png</file>
+        <file>Imagenes/premium.png</file>
+        <file>Imagenes/abajo.png</file>
+        <file>Imagenes/sound1.wav</file>
+        <file>Imagenes/administrador.jpg</file>
+        <file>Imagenes/est.jpg</file>
+        <file>Imagenes/normal.jpg</file>
+        <file>Imagenes/aniversario.jpg</file>
+        <file>Imagenes/fondo.png</file>
+    </qresource>
+</RCC>

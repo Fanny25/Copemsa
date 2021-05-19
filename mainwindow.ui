@@ -1,0 +1,5868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>809</width>
+    <height>509</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMessageBox{
+	background-color: white;
+	font-family: rubik;
+	font-size: 15px;
+	color: rgb(40, 53, 147);
+}
+
+QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>810</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">*{
+background-color: white;
+font-family: rubik;
+}
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="InicoSesion">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>-40</y>
+        <width>801</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondo.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_14">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>190</y>
+        <width>311</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+background-color: transparent;
+border: none;
+}
+
+QGroupBox{
+background-color:white;
+border: none;
+}
+
+QLabel{
+color:#1a237e;
+background-color: transparent;
+font-size:14px
+}
+
+QLineEdit{
+color: black;
+border-bottom: 2px solid #fe761e;
+border-color: #fe761e;
+font-size:14px;
+
+}
+
+QPushButton{
+background-color :#f1441c;
+font-size:14px;
+border: 1px solid #d40a18;
+border-radius: 8px; 
+}
+
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLineEdit" name="Pass">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>281</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>Contraseña</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="registro">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>200</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #fe761e;
+border:none;
+background-color: white;
+font: 87 &quot;Arial Black&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Registrate gratis</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="User">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>281</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Usuario</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="IniciarSesion">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>100</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>  Iniciar Sesion  </string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>200</y>
+         <width>151</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #d40a18;</string>
+       </property>
+       <property name="text">
+        <string>¿No tienes cuenta?</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="OContra">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>230</y>
+         <width>201</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: #fe761e;
+border:none;
+background-color: white;
+font-size:14px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>¿Olvidaste tu contraseña?</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>200</y>
+        <width>261</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/Imagenes/Logo.png)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_59">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>-20</y>
+        <width>261</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/Imagenes/logo.png)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Registro">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>0</y>
+        <width>401</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+background-color: transparent;
+border: none;
+}
+
+
+QGroupBox{
+background-color:white;
+border: none;
+
+}
+
+QLineEdit{
+color: #1a237e;
+border-bottom: 1px solid #1a237e;
+border-color: #1a237e;
+font-size:14px;
+}
+
+QLabel{
+color:#1a237e;
+background-color: transparent;
+font-size:14px
+
+}
+
+QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}
+
+
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>50</y>
+         <width>281</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 20px;</string>
+       </property>
+       <property name="text">
+        <string>Ingrese Sus Datos Personales</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Siguiente">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>460</y>
+         <width>131</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Siguiente</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="NombreReg">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>110</y>
+         <width>301</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="placeholderText">
+        <string>Nombre</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ApellidoReg_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>150</y>
+         <width>301</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="placeholderText">
+        <string>Apellido Paterno</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="CorreoReg">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>320</y>
+         <width>301</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="placeholderText">
+        <string>Correo</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ContraReg">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>360</y>
+         <width>301</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>Contraseña</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="UsuarioReg">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>280</y>
+         <width>301</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="placeholderText">
+        <string>Usuario</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="regresar">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>88</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Volver</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="TelReg">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>240</y>
+         <width>301</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Normal</enum>
+       </property>
+       <property name="placeholderText">
+        <string>Telefono</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ApellidoReg">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>190</y>
+         <width>301</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="placeholderText">
+        <string>Apellido Materno</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ContraReg_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>400</y>
+         <width>301</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>Repite tu contraseña</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_Registro">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-10</y>
+        <width>401</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(40, 53, 147);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_15">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>130</y>
+        <width>291</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/Imagenes/Registrarse.png);
+background-color:transparent;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Tarjeta">
+     <widget class="QLabel" name="label_Registro_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>401</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(40, 53, 147);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>0</y>
+        <width>411</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+background-color: transparent;
+border: none;
+}
+
+
+QGroupBox{
+background-color:white;
+border: none;
+
+}
+
+QLineEdit{
+color: #1a237e;
+border-bottom: 1px solid #1a237e;
+border-color: #1a237e;
+font-size:14px;
+}
+
+QLabel{
+color:#1a237e;
+background-color: transparent;
+font-size:14px
+
+}
+
+QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}
+
+
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>50</y>
+         <width>311</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font-size: 20px;</string>
+       </property>
+       <property name="text">
+        <string>Ingrese los datos de su tarjeta</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Crear">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>350</y>
+         <width>131</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Crear Cuenta</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="num_tarjeta">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>170</y>
+         <width>301</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>Numero de tarjeta</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cvv">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>260</y>
+         <width>41</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="placeholderText">
+        <string>cvv</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="mes">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>260</y>
+         <width>41</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="placeholderText">
+        <string>Mes</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="regresar_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>88</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Volver</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="agno">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>260</y>
+         <width>41</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Normal</enum>
+       </property>
+       <property name="placeholderText">
+        <string>Año</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="dueno">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>120</y>
+         <width>301</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="placeholderText">
+        <string>Dueño de la tarjet</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>220</y>
+         <width>121</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Mastercard</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Visa</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>220</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>270</y>
+         <width>16</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>/</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_19">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>130</y>
+        <width>291</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/Imagenes/Tarjeta.png);
+background-color:transparent;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="OlvidarContra">
+     <widget class="QGroupBox" name="groupBox_10">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>0</y>
+        <width>401</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+background-color: transparent;
+border: none;
+font-family: rubik;
+}
+
+
+QGroupBox{
+background-color:white;
+border: none;
+
+}
+
+QLineEdit{
+color: #1a237e;
+border-bottom: 1px solid #1a237e;
+border-color: #1a237e;
+font-size:14px;
+}
+
+QLabel{
+color:#1a237e;
+background-color: transparent;
+font-size:14px
+
+}
+
+QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}
+
+
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>150</y>
+         <width>181</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"> font-size: 20px;
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Cambiar contraseña</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cambiarC">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>400</y>
+         <width>171</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Cambiar Contraseña</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="user">
+       <property name="geometry">
+        <rect>
+         <x>51</x>
+         <y>196</y>
+         <width>261</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="placeholderText">
+        <string>Usuario</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="CPass">
+       <property name="geometry">
+        <rect>
+         <x>51</x>
+         <y>256</y>
+         <width>261</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>Contraseña</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="CPass2">
+       <property name="geometry">
+        <rect>
+         <x>51</x>
+         <y>316</y>
+         <width>261</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>Confirmar Contraseña</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_CamPass">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>141</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;
+border-image: url(C:/Users/ailes/Desktop/Estacionamiento/Imagenes/user.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="regresar_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>88</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Volver</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_Registro_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-10</y>
+        <width>401</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(40, 53, 147);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_20">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>120</y>
+        <width>291</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/Imagenes/login.png);
+background-color:transparent;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PrimerInterfaz">
+     <widget class="QGroupBox" name="groupBox_30">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>51</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox{
+	background-color: #1a237e;
+border: none;
+
+}
+QPushButton{
+	background:transparent;
+}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="estacionamiento">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/estacionamiento.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="salir">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>360</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/salir.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="reservacion">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>260</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/factura.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="perfil">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/user1.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_12">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>-10</y>
+        <width>761</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="fecha_3">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_26">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>180</y>
+         <width>481</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QGroupBox{
+background-color:white;
+border: none;
+border-bottom-color: rgb(0, 0, 255);
+border: 1px solid #1a237e;
+}</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QLabel" name="label_53">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>0</y>
+          <width>281</width>
+          <height>291</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">	background-color: #1a237e;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Moferta">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>50</y>
+          <width>201</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+color:white;
+background-color: transparent;
+font-size:16px
+
+}</string>
+        </property>
+        <property name="text">
+         <string>No hay ofertas disponibles</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="img_oferta">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>151</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(85, 170, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_51">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>781</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #283593</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_27">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>60</y>
+         <width>291</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+border: 1px solid transparent;</string>
+       </property>
+       <property name="title">
+        <string>Mision</string>
+       </property>
+       <widget class="QLabel" name="label_52">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>271</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string> Brindar cada día un servicio de excelencia
+ que supere las expectativas de nuestros
+ clientes.</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_32">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>50</y>
+         <width>291</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+border: 1px solid transparent;</string>
+       </property>
+       <property name="title">
+        <string>Vision</string>
+       </property>
+       <widget class="QLabel" name="label_60">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>241</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ser el mejor prestador de servicios
+de estacionamientos del mercado,
+esforzándonos por ofrecer siempre
+un valor agregado a nuestros clientes.</string>
+        </property>
+       </widget>
+      </widget>
+      <zorder>label_51</zorder>
+      <zorder>groupBox_26</zorder>
+      <zorder>groupBox_27</zorder>
+      <zorder>groupBox_32</zorder>
+      <zorder>fecha_3</zorder>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Estacionamiento">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>-70</y>
+        <width>771</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::South</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>120</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="Piso1">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../Estacionamiento/Imagenes/piso1.png</normaloff>../Estacionamiento/Imagenes/piso1.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string notr="true"/>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>70</y>
+          <width>781</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #e0e0e0;</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget_12">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>20</y>
+           <width>611</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="Arriba">
+          <item>
+           <layout class="QGridLayout" name="FG_9">
+            <item row="0" column="3">
+             <widget class="QPushButton" name="numero4">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>4</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QPushButton" name="numero5">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>5</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="numero1">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="numero2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="numero3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>3</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_13">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>310</y>
+           <width>611</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="Abajo">
+          <item>
+           <layout class="QGridLayout" name="FG_10">
+            <item row="0" column="3">
+             <widget class="QPushButton" name="numero9">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>9</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="numero6">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>6</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="numero7">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>7</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="numero8">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>8</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QPushButton" name="numero10">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>10</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_14">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>170</y>
+           <width>971</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="Road">
+          <item>
+           <widget class="QLabel" name="label_14">
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/Imagenes/carretera1.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="Line" name="line_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>145</y>
+           <width>761</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_4">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>275</y>
+           <width>761</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Piso2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../Estacionamiento/Imagenes/piso2.png</normaloff>../Estacionamiento/Imagenes/piso2.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>70</y>
+          <width>781</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #e0e0e0;</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget_21">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>20</y>
+           <width>611</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="Arriba_2">
+          <item>
+           <layout class="QGridLayout" name="FG_15">
+            <item row="0" column="3">
+             <widget class="QPushButton" name="Piso2num4">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>4</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QPushButton" name="Piso2num5">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>5</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="Piso2num1">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="Piso2num2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="Piso2num3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>3</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_22">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>310</y>
+           <width>611</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="Abajo_2">
+          <item>
+           <layout class="QGridLayout" name="FG_16">
+            <item row="0" column="3">
+             <widget class="QPushButton" name="Piso2num9">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>9</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="Piso2num6">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>6</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="Piso2num7">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>7</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="Piso2num8">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>8</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QPushButton" name="Piso2num10">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>10</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_23">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>170</y>
+           <width>971</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="Road_2">
+          <item>
+           <widget class="QLabel" name="label_17">
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/Imagenes/carretera1.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="Line" name="line_9">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>145</y>
+           <width>761</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_10">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>275</y>
+           <width>761</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Piso3">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../Estacionamiento/Imagenes/piso3.png</normaloff>../Estacionamiento/Imagenes/piso3.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>70</y>
+          <width>781</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #e0e0e0;</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget_9">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>20</y>
+           <width>611</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="Arriba_3">
+          <item>
+           <layout class="QGridLayout" name="FG_7">
+            <item row="0" column="3">
+             <widget class="QPushButton" name="Piso3num4">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>4</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QPushButton" name="Piso3num5">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>5</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="Piso3num1">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="Piso3num2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="Piso3num3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>3</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_10">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>310</y>
+           <width>611</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="Abajo_3">
+          <item>
+           <layout class="QGridLayout" name="FG_8">
+            <item row="0" column="3">
+             <widget class="QPushButton" name="Piso3num9">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>9</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="Piso3num6">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>6</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="Piso3num7">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>7</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="Piso3num8">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>8</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QPushButton" name="Piso3num10">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>rubik</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: #757575;
+	border: 2px solid black;
+	font-size:28px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>10</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_11">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>170</y>
+           <width>971</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="Road_3">
+          <item>
+           <widget class="QLabel" name="label_13">
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/Imagenes/carretera1.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="Line" name="line">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>145</y>
+           <width>761</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>275</y>
+           <width>761</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_28">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>51</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox{
+	background-color: #1a237e;
+border: none;
+
+}
+QPushButton{
+	background:transparent;
+}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="estacionamiento_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/estacionamiento.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="salir_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>360</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/salir.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="reservacion_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>260</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/factura.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="perfil_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/user1.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <zorder>salir_2</zorder>
+      <zorder>estacionamiento_2</zorder>
+      <zorder>reservacion_2</zorder>
+      <zorder>perfil_2</zorder>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ReservacionEmergencia">
+     <widget class="QGroupBox" name="groupBox_13">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>-40</y>
+        <width>811</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+background-color: transparent;
+border: none;
+}
+
+
+QGroupBox{
+background-color:white;
+border: none;
+
+}
+
+QLineEdit{
+color: #1a237e;
+border-bottom: 1px solid #1a237e;
+border-color: #1a237e;
+font-size:14px;
+}
+
+QLabel{
+color:#1a237e;
+background-color: transparent;
+font-size:14px
+
+}
+
+QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}
+
+
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <widget class="QPushButton" name="reservarcajon">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>500</y>
+         <width>131</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Reservar</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Modelo_3">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>140</y>
+         <width>191</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>Modelo</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Matricula_3">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>60</y>
+         <width>191</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="placeholderText">
+        <string>Matricula</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fotouser_4">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>40</y>
+         <width>181</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid black;
+border-radius:10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="autofoto">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>150</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/camara.png);
+    background-color: white;
+    width: 36px;
+    height: 36px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="descripcion_3">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>220</y>
+         <width>191</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid black;</string>
+       </property>
+       <property name="plainText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Registro_6">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>20</y>
+         <width>401</width>
+         <height>521</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(40, 53, 147);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>340</y>
+         <width>151</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hora de entrada:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>420</y>
+         <width>151</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hora  de salida:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>220</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Descripcion breve 
+del vehiculo: </string>
+       </property>
+      </widget>
+      <widget class="QTimeEdit" name="hora_inicio">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>340</y>
+         <width>118</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="maximumTime">
+        <time>
+         <hour>22</hour>
+         <minute>0</minute>
+         <second>0</second>
+        </time>
+       </property>
+       <property name="minimumTime">
+        <time>
+         <hour>5</hour>
+         <minute>0</minute>
+         <second>0</second>
+        </time>
+       </property>
+       <property name="displayFormat">
+        <string>HH:mm AP</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QTimeEdit" name="hora_fin">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>410</y>
+         <width>118</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="maximumTime">
+        <time>
+         <hour>23</hour>
+         <minute>0</minute>
+         <second>0</second>
+        </time>
+       </property>
+       <property name="minimumTime">
+        <time>
+         <hour>6</hour>
+         <minute>0</minute>
+         <second>0</second>
+        </time>
+       </property>
+       <property name="displayFormat">
+        <string>HH:mm AP</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="regresar_4">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>88</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Volver</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_22">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>150</y>
+         <width>291</width>
+         <height>271</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/Imagenes/urgencia.png);
+background-color:transparent;</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ReservacionNormal">
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-40</y>
+        <width>811</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+background-color: transparent;
+border: none;
+}
+
+
+QGroupBox{
+background-color:white;
+border: none;
+
+}
+
+QLineEdit{
+color: #1a237e;
+border-bottom: 1px solid #1a237e;
+border-color: #1a237e;
+font-size:14px;
+}
+
+QLabel{
+color:#1a237e;
+background-color: transparent;
+font-size:14px
+
+}
+
+QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}
+
+
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <widget class="QPushButton" name="reservarcajon_2">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>500</y>
+         <width>131</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Reservar</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Modelo">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>140</y>
+         <width>191</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>Modelo</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Matricula">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>60</y>
+         <width>191</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="placeholderText">
+        <string>Matricula</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fotouser_2">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>40</y>
+         <width>181</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid black;
+border-radius:10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="autofoto_2">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>150</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/camara.png);
+    background-color: white;
+    width: 36px;
+    height: 36px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QDateTimeEdit" name="inicio">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>340</y>
+         <width>194</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="dateTime">
+        <datetime>
+         <hour>8</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>2020</year>
+         <month>10</month>
+         <day>2</day>
+        </datetime>
+       </property>
+       <property name="time">
+        <time>
+         <hour>8</hour>
+         <minute>0</minute>
+         <second>0</second>
+        </time>
+       </property>
+       <property name="maximumDateTime">
+        <datetime>
+         <hour>19</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>2022</year>
+         <month>12</month>
+         <day>31</day>
+        </datetime>
+       </property>
+       <property name="maximumDate">
+        <date>
+         <year>2022</year>
+         <month>12</month>
+         <day>31</day>
+        </date>
+       </property>
+       <property name="minimumTime">
+        <time>
+         <hour>8</hour>
+         <minute>0</minute>
+         <second>0</second>
+        </time>
+       </property>
+       <property name="displayFormat">
+        <string>d/M/yyyy HH:mm AP</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+       <property name="timeSpec">
+        <enum>Qt::LocalTime</enum>
+       </property>
+      </widget>
+      <widget class="QDateTimeEdit" name="fin">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>420</y>
+         <width>194</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="dateTime">
+        <datetime>
+         <hour>20</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>2020</year>
+         <month>10</month>
+         <day>2</day>
+        </datetime>
+       </property>
+       <property name="time">
+        <time>
+         <hour>20</hour>
+         <minute>0</minute>
+         <second>0</second>
+        </time>
+       </property>
+       <property name="maximumDateTime">
+        <datetime>
+         <hour>19</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>2022</year>
+         <month>12</month>
+         <day>31</day>
+        </datetime>
+       </property>
+       <property name="maximumDate">
+        <date>
+         <year>2022</year>
+         <month>12</month>
+         <day>31</day>
+        </date>
+       </property>
+       <property name="minimumTime">
+        <time>
+         <hour>8</hour>
+         <minute>0</minute>
+         <second>0</second>
+        </time>
+       </property>
+       <property name="currentSection">
+        <enum>QDateTimeEdit::DaySection</enum>
+       </property>
+       <property name="displayFormat">
+        <string>d/M/yyyy HH:mm AP</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+       <property name="timeSpec">
+        <enum>Qt::LocalTime</enum>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="descripcion">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>220</y>
+         <width>191</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid black;</string>
+       </property>
+       <property name="plainText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Registro_4">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>20</y>
+         <width>401</width>
+         <height>521</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(40, 53, 147);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>340</y>
+         <width>151</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hora y dia de entrada:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>420</y>
+         <width>151</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hora y dia de salida:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>220</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Descripcion breve 
+del vehiculo: </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="regresar_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>88</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Volver</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_21">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>150</y>
+         <width>291</width>
+         <height>271</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/Imagenes/reserva.png);
+background-color:transparent;</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ReservacionPremium">
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-40</y>
+        <width>811</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+background-color: transparent;
+border: none;
+}
+
+
+QGroupBox{
+background-color:white;
+border: none;
+
+}
+
+QLineEdit{
+color: #1a237e;
+border-bottom: 1px solid #1a237e;
+border-color: #1a237e;
+font-size:14px;
+}
+
+QLabel{
+color:#1a237e;
+background-color: transparent;
+font-size:14px
+
+}
+
+QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}
+
+
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <widget class="QPushButton" name="reservarcajon_3">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>500</y>
+         <width>131</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Reservar</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Modelo_2">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>140</y>
+         <width>191</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>Modelo</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Matricula_2">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>60</y>
+         <width>191</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="placeholderText">
+        <string>Matricula</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fotouser_3">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>40</y>
+         <width>181</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid black;
+border-radius:10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="autofoto_3">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>150</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/camara.png);
+    background-color: white;
+    width: 36px;
+    height: 36px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="descripcion_2">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>220</y>
+         <width>231</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid black;</string>
+       </property>
+       <property name="plainText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Registro_5">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>20</y>
+         <width>401</width>
+         <height>521</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(40, 53, 147);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>340</y>
+         <width>151</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Dia de entrada:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>420</y>
+         <width>151</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Dia de salida:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>220</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Descripcion breve 
+del vehiculo: </string>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="dia_inicio">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>340</y>
+         <width>110</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="minimumDate">
+        <date>
+         <year>2022</year>
+         <month>9</month>
+         <day>14</day>
+        </date>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="dia_fin">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>410</y>
+         <width>110</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="minimumDate">
+        <date>
+         <year>2020</year>
+         <month>9</month>
+         <day>14</day>
+        </date>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="regresar_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>88</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Volver</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_23">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>150</y>
+         <width>291</width>
+         <height>271</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/Imagenes/premium.png);
+background-color:transparent;</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Perfil">
+     <widget class="QGroupBox" name="groupBox_16">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>-8</y>
+        <width>761</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+background-color: transparent;
+border: none;
+font-family: rubik;
+}
+
+
+QGroupBox{
+background-color:white;
+border: none;
+
+}
+
+QLineEdit{
+color: #1a237e;
+border-bottom: 1px solid #1a237e;
+border-color: #1a237e;
+font-size:14px;
+}
+
+QLabel{
+color:#1a237e;
+background-color: transparent;
+font-size:14px
+
+}
+
+QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}
+
+
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="fotouser">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>50</y>
+         <width>191</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid black;
+border-radius:10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="CambiarFoto">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>190</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/camara.png);
+    background-color: none;
+    width: 36px;
+    height: 36px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="aceptar">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>260</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Aceptar</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>40</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Agregar/Cambiar Direccion</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="gridLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>280</y>
+         <width>231</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_20">
+          <property name="text">
+           <string>Apellidos:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="tel">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_56">
+          <property name="text">
+           <string>No Interior:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_57">
+          <property name="text">
+           <string>No Exterior:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string>Nombre:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLabel" name="no_int">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLabel" name="Colonia">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLabel" name="codigoP">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_21">
+          <property name="text">
+           <string>Correo:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="apellidop">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_23">
+          <property name="text">
+           <string>Telefono:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLabel" name="no_ext">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_55">
+          <property name="text">
+           <string>Colonia:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_58">
+          <property name="text">
+           <string>CP:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLabel" name="Calle">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="correo">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_54">
+          <property name="text">
+           <string>Calle:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="nom">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>80</y>
+         <width>231</width>
+         <height>169</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLineEdit" name="calle">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="placeholderText">
+           <string>Calle</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="colonia">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="placeholderText">
+           <string>Colonia</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="no_interior">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="placeholderText">
+           <string>No. Interior (opcional)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="no_exterior">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="placeholderText">
+           <string>No. Exterior</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="cp">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="placeholderText">
+           <string>Codigo Postal</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_30">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>250</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_30{text-align:center;}
+</string>
+       </property>
+       <property name="text">
+        <string>Datos del cliente</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_31">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>51</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox{
+	background-color: #1a237e;
+border: none;
+
+}
+QPushButton{
+	background:transparent;
+}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="estacionamiento_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ border-image:url(:/Imagenes/estacionamiento.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="salir_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>360</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/salir.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="reservacion_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>260</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/factura.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="perfil_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/user1.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ReservacionInfo">
+     <widget class="QGroupBox" name="groupBox_17">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>771</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+background-color: transparent;
+border: none;
+font-family: rubik;
+}
+
+
+QGroupBox{
+background-color:white;
+border: none;
+
+}
+
+QLineEdit{
+color: #1a237e;
+border-bottom: 1px solid #1a237e;
+border-color: #1a237e;
+font-size:14px;
+}
+
+QLabel{
+color:#1a237e;
+background-color: transparent;
+font-size:14px
+
+}
+
+QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}
+
+
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>230</y>
+         <width>326</width>
+         <height>179</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_37">
+          <property name="text">
+           <string>Tipo de Tarjeta:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_32">
+          <property name="text">
+           <string>Dueño:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_38">
+          <property name="text">
+           <string>Mes / Año</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_33">
+          <property name="text">
+           <string>Hora entrada</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="no_tarjeta">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLabel" name="agno_2">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_24">
+          <property name="text">
+           <string>Numero de cajón:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_28">
+          <property name="text">
+           <string>Numero de piso:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLabel" name="tipo">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="cajon">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="Piso">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="dueno_2">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_36">
+          <property name="text">
+           <string>No. Tarjeta:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_34">
+          <property name="text">
+           <string>Hora de salida</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLabel" name="entrada">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLabel" name="salida">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLineEdit" name="ruta_2">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>230</y>
+         <width>271</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="placeholderText">
+        <string>Ingrese la ruta para descargar factura</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="genera">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>270</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Generar Factura</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="ruta">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>230</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ruta</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fotouser_5">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>20</y>
+         <width>191</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid black;
+border-radius:10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>420</y>
+         <width>321</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_31">
+          <property name="text">
+           <string>Monto total:$</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lMonto">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="fecha">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>20</y>
+         <width>271</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QWidget" name="gridLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>460</y>
+         <width>289</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="Extender">
+          <property name="text">
+           <string>Extender horario</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="Pagar">
+          <property name="text">
+           <string>Pagar </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="btnCancelarReserva">
+          <property name="text">
+           <string>Cancelar</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>570</x>
+         <y>470</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Reservaciones Premium</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>330</y>
+         <width>291</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_29">
+          <property name="text">
+           <string>Ver historial de reservaciones</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Ir">
+          <property name="text">
+           <string>Ir</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_29">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>51</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox{
+	background-color: #1a237e;
+border: none;
+
+}
+QPushButton{
+	background:transparent;
+}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="estacionamiento_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/estacionamiento.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="salir_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>360</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/salir.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="reservacion_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>260</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/factura.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="perfil_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/Imagenes/user1.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ListaDeReservacones">
+     <widget class="QGroupBox" name="groupBox_18">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-10</y>
+        <width>801</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+background-color: transparent;
+border: none;
+font-family: rubik;
+}
+
+
+QGroupBox{
+background-color:white;
+border: none;
+
+}
+
+QLineEdit{
+color: #1a237e;
+border-bottom: 1px solid #1a237e;
+border-color: #1a237e;
+font-size:14px;
+}
+
+QLabel{
+color:#1a237e;
+background-color: transparent;
+font-size:14px
+
+}
+
+QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}
+
+
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_90">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>331</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>rubik</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:15px;</string>
+       </property>
+       <property name="text">
+        <string>Reservaciones y reservaciones de emergencia:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_91">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>240</y>
+         <width>331</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>rubik</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:15px;</string>
+       </property>
+       <property name="text">
+        <string>Resevaciones Premium:</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_1">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>50</y>
+         <width>921</width>
+         <height>192</height>
+        </rect>
+       </property>
+       <column>
+        <property name="text">
+         <string>Inicio</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Fin</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Total </string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Estado</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>290</y>
+         <width>451</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <column>
+        <property name="text">
+         <string>Inicio</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Fin</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Total</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Estado</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QPushButton" name="Volver">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>480</y>
+         <width>75</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Volver</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="MenuAdmin">
+     <widget class="QGroupBox" name="groupBox_25">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>811</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="lab">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>401</width>
+         <height>521</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #1c1d5c;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>50</y>
+         <width>231</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Ver clientes registrados</string>
+       </property>
+       <widget class="QTextBrowser" name="textBrowser">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>211</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'rubik'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;En esta sección se podran visualizar a todos los clientes que estan regsitrados en el sistema.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="verDetalles">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>90</y>
+          <width>101</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Entrar</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_8">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>240</y>
+         <width>231</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Ofertas</string>
+       </property>
+       <widget class="QTextBrowser" name="textBrowser_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>211</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'rubik'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;En esta seccion el administrados podra publicar las ofertas de la semana. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Ofertas">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>90</y>
+          <width>101</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Entrar</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pbSalir">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>480</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Salir</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>321</width>
+         <height>351</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/Imagenes/administrador.jpg)</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Registrados">
+     <widget class="QGroupBox" name="groupBox_11">
+      <property name="geometry">
+       <rect>
+        <x>-20</x>
+        <y>-10</y>
+        <width>841</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QTableWidget" name="Autos">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>120</y>
+         <width>621</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>10</width>
+         <height>10</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:#1a237e;
+font-size:15px</string>
+       </property>
+       <attribute name="horizontalHeaderCascadingSectionResizes">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderCascadingSectionResizes">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderStretchLastSection">
+        <bool>false</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>Usuario</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>A. Paterno</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>A. Materno</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>New Column</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>telefono</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QTextBrowser" name="textBrowser_15">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>40</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:black;</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'rubik'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Usuarios Registrados&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="volverregdos">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>480</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Volver</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Oferta">
+     <widget class="QGroupBox" name="groupBox_24">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>811</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+background-color:white;
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="fecha_2">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>20</y>
+         <width>271</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="Line" name="line_5">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>0</y>
+         <width>16</width>
+         <height>511</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>230</y>
+         <width>91</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+color:#1a237e;
+background-color: transparent;
+font-size:25px
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Ofertas</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="formLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>10</y>
+         <width>334</width>
+         <height>289</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="1" column="0">
+         <widget class="QRadioButton" name="aniversario">
+          <property name="text">
+           <string>Aniversario del estacionamiento</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QRadioButton" name="agno_nuevo">
+          <property name="text">
+           <string>Año nuevo</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QRadioButton" name="reyes">
+          <property name="text">
+           <string>Dia de reyes</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QRadioButton" name="sanValentin">
+          <property name="text">
+           <string>Dia de San Valentin</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QRadioButton" name="dia_nino">
+          <property name="text">
+           <string>Dia del niño</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QRadioButton" name="batalla">
+          <property name="text">
+           <string>Batalla de Puebla</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QRadioButton" name="DMadre">
+          <property name="text">
+           <string>Dia de la madre</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QRadioButton" name="DMuertos">
+          <property name="text">
+           <string>Dia de muertos</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QRadioButton" name="Navidad">
+          <property name="text">
+           <string>Navidad</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_40">
+          <property name="text">
+           <string>1 de Enero</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_41">
+          <property name="text">
+           <string>4 de Octubre</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="label_42">
+          <property name="text">
+           <string>6 de Enero</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLabel" name="label_43">
+          <property name="text">
+           <string>14 de Febrero</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLabel" name="label_44">
+          <property name="text">
+           <string>30 de Abril</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLabel" name="label_45">
+          <property name="text">
+           <string>5 de Mayo</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLabel" name="label_46">
+          <property name="text">
+           <string>10 de Mayo</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QLabel" name="label_47">
+          <property name="text">
+           <string>2 de Noviembre</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLabel" name="label_48">
+          <property name="text">
+           <string>1 de Noviembre</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QRadioButton" name="todosSantos">
+          <property name="text">
+           <string>Dia de todos los santos</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QLabel" name="label_49">
+          <property name="text">
+           <string>25 de Diciembre</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_39">
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+color:#1a237e;
+background-color: transparent;
+font-size:15px
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Seleccione una opcion:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="formLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>330</y>
+         <width>251</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_50">
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+color:#1a237e;
+background-color: transparent;
+font-size:15px
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Seleccione el descuento:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="descuento">
+          <item>
+           <property name="text">
+            <string>10%</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>20%</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>30%</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>40%</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>50%</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="crearOferta">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>390</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Crear oferta</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Volver_2">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>480</y>
+         <width>75</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Volver</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="infPremium">
+     <widget class="QGroupBox" name="groupBox_33">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>0</y>
+        <width>821</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+background-color: transparent;
+border: none;
+font-family: rubik;
+}
+
+
+QGroupBox{
+background-color:white;
+border: none;
+
+}
+
+QLineEdit{
+color: #1a237e;
+border-bottom: 1px solid #1a237e;
+border-color: #1a237e;
+font-size:14px;
+}
+
+QLabel{
+color:#1a237e;
+background-color: transparent;
+font-size:14px
+
+}
+
+QPushButton{
+color: white;
+background-color: #1a237e;
+font-size:14px;
+border: 1px solid #1a237e;
+border-radius: 10px; 
+padding: 2px 4px;
+}
+
+
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_6">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>210</y>
+         <width>331</width>
+         <height>179</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_70">
+          <property name="text">
+           <string>Tipo de Tarjeta:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_71">
+          <property name="text">
+           <string>Dueño:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_73">
+          <property name="text">
+           <string>Fecha de inicio</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="no_Tarjeta_3">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLabel" name="precioxd">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_74">
+          <property name="text">
+           <string>Numero de cajón:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_75">
+          <property name="text">
+           <string>Numero de piso:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLabel" name="Tipo_3">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="Cajon_3">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="Piso_3">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="Dueno_4">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_76">
+          <property name="text">
+           <string>No. Tarjeta:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_77">
+          <property name="text">
+           <string>Fecha final</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLabel" name="Entrada_3">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLabel" name="Salida_3">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_72">
+          <property name="text">
+           <string>Precio por día</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLineEdit" name="ruta_5">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>230</y>
+         <width>271</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="placeholderText">
+        <string>Ingrese la ruta para descargar factura</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="genera_3">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>270</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Generar Factura</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="ruta_6">
+       <property name="geometry">
+        <rect>
+         <x>690</x>
+         <y>230</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ruta</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fotouser_7">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>40</y>
+         <width>171</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid black;
+border-radius:10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>410</y>
+         <width>331</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_79">
+          <property name="text">
+           <string>Total:$</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lMonto_3">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="fecha_5">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>30</y>
+         <width>271</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QWidget" name="gridLayoutWidget_7">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>450</y>
+         <width>289</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="Pagar_3">
+          <property name="text">
+           <string>Pagar </string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="volverP">
+       <property name="geometry">
+        <rect>
+         <x>690</x>
+         <y>450</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Volver</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
